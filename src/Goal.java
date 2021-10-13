@@ -35,6 +35,36 @@ public class Goal
         return result;
     }
 
+    /**
+     * Is it ok for the user to place this die next? (DOES NOT actually do the placement)
+     * @param dieToConsider
+     * @return boolean - whether it is ok to place this die.
+     */
+    public boolean isLegalMove(int dieToConsider)
+    {
+        // ---------------------------------
+        // TODO: you write this.
 
+        // ---------------------------------
+        return false; // temporary code -- replace this.
+    }
+
+
+    /**
+     * adds this die to the row of dice placed. Assumes that the move is a legal one, or will throw an exception.
+     * @param dieToPlay - the die to add to the row.
+     */
+    public void makeMove(int dieToPlay)
+    {
+        if (! isLegalMove(dieToPlay))
+        {
+            throw new RuntimeException("You attempted to play an illegal move on this row - you should have checked it first: "+dieToPlay);
+        }
+
+        // ---------------------------------
+        // TODO: you write this.
+
+        // ---------------------------------
+    }
 
 }
