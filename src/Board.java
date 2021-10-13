@@ -1,3 +1,6 @@
+/**
+ * A Board is a collection of 5-6 Goals, each of which represents a row of spaces.
+ */
 public class Board
 {
     // ---------------------------------
